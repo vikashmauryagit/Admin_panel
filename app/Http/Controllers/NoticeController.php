@@ -29,11 +29,10 @@ class NoticeController extends Controller
      */
     public function store(Request $request)
     {
-        // return $request;
-        $data = $request->validate([
+        $request->validate([
             'date' => 'required',
             'notice_title' => 'required',
-            'upload_file' => 'required|upload_file|mimes:jpg,png,pdf,webp,docx|max:2048',
+            'upload_file' => 'nullable|file|mimes:jpg,png,pdf,webp,docx|max:2048',
         ]);
 
         // Store the file in the 'public' disk (usually storage/app/public)
@@ -55,27 +54,48 @@ class NoticeController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+    
     public function edit(string $id)
     {
-        //
+        $notice=Notice::find($id);
+        return view('Notice/edite_notice',compact('notice'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
+        public function update(Request $request, string $id)
+{
+    $request->validate([
+        'date' => 'required',
+        'notice_title' => 'required',
+        'upload_file' => 'nullable|file|mimes:jpg,png,pdf,webp,docx|max:2048',
+    ]);
+
+    $notice = Notice::findOrFail($id);
+
+    if ($request->hasFile('upload_file')) {
+        // Store the file and get the file path
+        $filePath = $request->file('upload_file')->store('uploads', 'public');
+        // Update the file path in the database
+        $notice->file_path = $filePath;
     }
+
+    // Update other fields
+    $notice->date = $request->date;
+    $notice->notice_title = $request->notice_title;
+
+    $notice->save();
+
+    return redirect()->route('notice.index')->with('success', "Notice Data Updated Successfully.");
+}
+
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        $notice = Notice::findOrFail($id);
+        $notice->delete();
+    
+        return redirect()->route('notice.index')->with('success', 'Notice deleted successfully.');
     }
 }

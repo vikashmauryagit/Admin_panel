@@ -32,18 +32,28 @@
                 <tbody>
                     @foreach ($notice as $item)
                         <tr>
+                          
                             <td>{{ $item->date }}</td>
                             <td>{{ $item->notice_title }}</td>
+                            {{-- {{ dd(Storage::url($item->image)) }} --}}
+                            <td><img src="{{ Storage::url($item->file_path) }}" alt="User Image" width="100 rounded"></td>
                             <td>
-                                @if (in_array(pathinfo($item->file_path, PATHINFO_EXTENSION), ['jpg', 'jpeg', 'png', 'gif']))
-                                    <img src="{{ asset('storage/' . $item->file_path) }}" width="200" height="auto">
-                                @else
-                                    <a href="{{ asset('storage/' . $item->file_path) }}" target="_blank">View File</a>
-                                @endif
+                                <div class="d-flex">
+                                    <div class="mr-2">
+                                        <a href="{{route('notice.edit',$item->id)}}"><i class="fa-solid fa-pen-to-square bg-primary p-2 rounded"></i></a>
+                                    </div>
+                                    <div>
+                                        <form action="{{route('notice.destroy',$item->id)}}" method="POST">
+                                            @csrf
+                                            @method("DELETE")
+                                            <button type="submit"  style="background: none; border: none;">
+                                                <i class="fa-solid fa-trash bg-danger p-2 runded"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
                             </td>
-                            
-                                                   
-                            <td> 4</td>
                         </tr>
                     @endforeach
                 </tbody>
