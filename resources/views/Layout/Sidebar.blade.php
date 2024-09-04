@@ -1,7 +1,7 @@
 <!-- Brand Logo -->
-<a href="index3.html" class="brand-link">
-    <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">AdminLTE 3</span>
+<a href="" class="brand-link">
+    <img src="{{asset('image/lion.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <span class="brand-text font-weight-light fs-3">Lion Tarachand <br>Bappa Hospital</span>
 </a>
 
 <!-- Sidebar -->
@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link tuch">
+                <a href="{{route('Event.index')}}" class="nav-link tuch">
                     <i class="fa-solid fa-calendar-check"></i>
                     <p>
                         Events
@@ -37,7 +37,7 @@
                     </p>
                 </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="#" class="nav-link tuch">
                     <i class="fa-solid fa-calendar-days"></i>
                     <p>
@@ -54,6 +54,7 @@
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
+            </li> --}}
         </ul>
     </nav>
 </div>

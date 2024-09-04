@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Notice;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class NoticeController extends Controller
 {
@@ -72,6 +73,9 @@ class NoticeController extends Controller
     $notice = Notice::findOrFail($id);
 
     if ($request->hasFile('upload_file')) {
+        if ($notice->file_path && Storage::disk('public')->exists($notice->file_path)) {
+            Storage::disk('public')->delete($notice->file_path);
+        }
         // Store the file and get the file path
         $filePath = $request->file('upload_file')->store('uploads', 'public');
         // Update the file path in the database
@@ -94,6 +98,9 @@ class NoticeController extends Controller
     public function destroy($id)
     {
         $notice = Notice::findOrFail($id);
+        if ($notice->file_path && Storage::disk('public')->exists($notice->file_path)) {
+            Storage::disk('public')->delete($notice->file_path);
+        }
         $notice->delete();
     
         return redirect()->route('notice.index')->with('success', 'Notice deleted successfully.');

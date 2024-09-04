@@ -32,7 +32,7 @@
                 <tbody>
                     @foreach ($notice as $item)
                         <tr>
-                          
+
                             <td>{{ $item->date }}</td>
                             <td>{{ $item->notice_title }}</td>
                             {{-- {{ dd(Storage::url($item->image)) }} --}}
@@ -40,14 +40,15 @@
                             <td>
                                 <div class="d-flex">
                                     <div class="mr-2">
-                                        <a href="{{route('notice.edit',$item->id)}}"><i class="fa-solid fa-pen-to-square bg-primary p-2 rounded"></i></a>
+                                        <a href="{{ route('notice.edit', $item->id) }}"><i
+                                                class="fa-solid fa-pen-to-square bg-primary p-2 rounded"></i></a>
                                     </div>
                                     <div>
-                                        <form action="{{route('notice.destroy',$item->id)}}" method="POST">
+                                        <form action="{{ route('notice.destroy', $item->id) }}" method="POST">
                                             @csrf
-                                            @method("DELETE")
-                                            <button type="submit"  style="background: none; border: none;">
-                                                <i class="fa-solid fa-trash bg-danger p-2 runded"></i>
+                                            @method('DELETE')
+                                            <button type="submit" style="background: none; border: none;">
+                                                <i class="fa-solid fa-trash bg-danger p-2 rounded"></i>
                                             </button>
                                         </form>
                                     </div>
@@ -59,10 +60,10 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th>Rendering engine</th>
-                        <th>Browser</th>
-                        <th>Platform(s)</th>
-                        <th>Engine version</th>
+                        <th>Date</th>
+                        <th>Notice Title</th>
+                        <th>File</th>
+                        <th>Action</th>
 
                     </tr>
                 </tfoot>

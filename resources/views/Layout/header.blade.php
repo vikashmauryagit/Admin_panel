@@ -6,10 +6,19 @@
         
       </ul>
     <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-                <i class="fas fa-expand-arrows-alt"></i>
-            </a>
-        </li>
+        <div class="d-flex align-items-center mr-5">
+            <div>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+            </div>
+            <div>
+               Hello,{{Auth::user()->name}}
+               <a href="{{route('logout')}}" class="btn btn-danger p-1 ml-2">Logout</a>
+             </div>
+        </div>
+        
     </ul>
 </nav>

@@ -30,6 +30,9 @@
                             @enderror
                         </div>
                         <div class="mb-3 col-12">
+                            <img src="{{ Storage::url($notice->file_path) }}" alt="nahi batana">
+                        </div>
+                        <div class="mb-3 col-12">
                             <label for="exampleInputPassword1" class="form-label">Upload File</label>
                             <input type="file" class="form-control" name="upload_file" value="{{$notice->file_path}}">
                             @error('upload_file')

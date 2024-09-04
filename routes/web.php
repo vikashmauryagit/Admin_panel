@@ -20,6 +20,7 @@ Route::get('/', function () {
     return view('User.login');
 })->name('login');
 Route::resource('user', UserController::class);
+Route::get('logout',[UserController::class,'logout'])->name('logout');
 
 
 // Notice Route

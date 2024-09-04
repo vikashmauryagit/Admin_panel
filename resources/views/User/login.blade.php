@@ -19,6 +19,9 @@
                         <div class="text-center bg-success rounded  text-light p-2 mb-2">
                             <p class="m-0 p-0 fw-semibold">Tarachand Bapp Hospital</p>
                             <h4 class="m-0 p-0">Login..</h4>
+                            @if (session('logout'))
+                                <span class="text-light fs-5">{{ session('logout') }}</span>
+                            @endif
                         </div>
                         <form action="{{ route('user.store') }}" method="POST">
                             @csrf
