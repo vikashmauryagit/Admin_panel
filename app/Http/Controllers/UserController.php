@@ -29,7 +29,6 @@ class UserController extends Controller
             'username' => 'required',
             'password' => 'required',
         ]);
-
         if (Auth::attempt($data)) {
             return redirect()->route('user.index')->with('status', "Welcome to Tarachand Bappa Hospiatl Dashboard");
         } else {

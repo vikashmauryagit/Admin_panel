@@ -1,6 +1,7 @@
 <!-- Brand Logo -->
 <a href="" class="brand-link">
-    <img src="{{asset('image/lion.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <img src="{{ asset('image/lion.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+        style="opacity: .8">
     <span class="brand-text font-weight-light fs-3">Lion Tarachand <br>Bappa Hospital</span>
 </a>
 
@@ -20,7 +21,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('notice.index') }}" class="nav-link tuch">
+                <a href="{{ route('notice.index') }}" class="nav-link" id="green">
                     <i class="fa-solid fa-circle-exclamation "></i>
                     <p>
                         Notice
@@ -29,7 +30,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{route('Event.index')}}" class="nav-link tuch">
+                <a href="{{ route('Event.index') }}" class="nav-link" id="orange">
                     <i class="fa-solid fa-calendar-check"></i>
                     <p>
                         Events
@@ -65,10 +66,10 @@
 
 <script>
     $(document).ready(function() {
-        $('.tuch').focus(function() {
-            $(this).css('background-color', "blue");
+        $('#green,#orange').focus(function() {
+            $(this).css('background-color', "green");
 
-            $('.tuch').blur(function() {
+            $('#freen1,#green2').blur(function() {
                 $(this).css('background-color', '');
             });
 
