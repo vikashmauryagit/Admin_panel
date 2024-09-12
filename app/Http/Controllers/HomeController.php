@@ -2,13 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
+use App\Models\Notice;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-          return view('Frontend.index');
+        $today = Carbon::today();
+        $currentEvents = Event::whereDate('event_date', '<=', $today)->get();
+        $upcomingEvents = Event::whereDate('event_date', '>', $today)->get();
+        
+          $notice=Notice::all();
+          return view('Frontend.index',compact('currentEvents','upcomingEvents','notice'));
+
+        // return view('showAllEvents.all_events');
     }
     public function about()
     {

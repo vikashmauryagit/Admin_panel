@@ -2617,7 +2617,7 @@ h2 {
 .swiper-navBtn::after {
   font-size: 38px;
   position: relative;
-  top:-400%;
+  top: -400%;
 }
 
 .swiper-button-next {
@@ -2636,11 +2636,13 @@ h2 {
 .swiper-pagination-bullet-active {
   background-color: #4070F4;
 }
+
 @media screen and (min-width: 768px) {
   .slide-content {
     margin: 0 10px;
     height: 320px;
   }
+}
 
 @media screen and (max-width: 768px) {
   .slide-content {
@@ -2960,6 +2962,7 @@ h2.special:after {
     font-weight: 600;
     text-shadow: 1px 1px 1px #1F3D7C;
   }
+
   .about .sideleft .img-fluid {
     width: 140%;
     height: auto;

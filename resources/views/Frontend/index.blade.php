@@ -234,6 +234,84 @@
   </section> -->
     <!-- End Cta Section -->
 
+    <div class="container">
+        <div class="row m-auto">
+            <div class="col-lg-4 offset-lg-2 mb-2">
+                <div class="card">
+                    <div class="card-header bg-success p-1 text-center text-light">
+                        <h5>Upcoming Events</h5>
+                    </div>
+                    <div class="card-body">
+                        @foreach ($upcomingEvents as $item)
+                            <div class="d-flex  gap-2 align-items-center  ">
+                                <div class="mb-1">
+                                    <a href="{{route('Event.show',$item->id)}}" class="btn btn-success p-1 rounded"><i
+                                            class="fa-solid fa-eye text-light"></i></a>
+                                </div>
+                                <div class="">
+                                    <p class="text-primary fw-semibold m-0">{{ $item->event_date }}</p>
+                                </div>
+                                <div>
+                                    <p class="text-primary fw-semibold m-0">{{ $item->event_title }}</p>
+                                </div>
+
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="card">
+                    <div class="card-header bg-success p-1 text-center text-light">
+                        <h5>Events</h5>
+                    </div>
+                    <div class="card-body">
+                      @foreach ($currentEvents as $item)
+                          <div class="d-flex  gap-2 align-items-center  ">
+                              <div class="mb-1">
+                                  <a href="{{route('Event.show',$item->id)}}" class="btn btn-success p-1 rounded"><i
+                                          class="fa-solid fa-eye text-light"></i></a>
+                              </div>
+                              <div class="">
+                                  <p class="text-primary fw-semibold m-0">{{ $item->event_date }}</p>
+                              </div>
+                              <div>
+                                  <p class="text-primary fw-semibold m-0">{{ $item->event_title }}</p>
+                              </div>
+
+                          </div>
+                      @endforeach
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 m-auto">
+                <div class="card">
+                    <div class="card-header bg-success p-1 text-center text-light">
+                        <h5>Notice</h5>
+                    </div>
+                    <div class="card-body">
+                      @foreach ($notice as $notice)
+                          <div class="d-flex  gap-2 align-items-center  ">
+                              <div class="mb-1">
+                                  <a href="{{route('notice.show',$notice->id)}}" class="btn btn-success p-1 rounded"><i
+                                          class="fa-solid fa-eye text-light"></i></a>
+                              </div>
+                              <div class="">
+                                  <p class="text-primary fw-semibold m-0">{{ $notice->date }}</p>
+                              </div>
+                              <div>
+                                  <p class="text-primary fw-semibold m-0">{{ $notice->notice_title }}</p>
+                              </div>
+
+                          </div>
+                      @endforeach
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">
@@ -586,7 +664,8 @@
                     </p>
                 </div>
 
-                <a href="{{route('service')}}" class="services-btn scrollto"><span class="d-none d-md-inline">More</span>
+                <a href="{{ route('service') }}" class="services-btn scrollto"><span
+                        class="d-none d-md-inline">More</span>
                     Services</a>
             </div>
 

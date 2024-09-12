@@ -52,6 +52,10 @@
                                             </button>
                                         </form>
                                     </div>
+                                    <div class="mb-1">
+                                        <a href="{{ route('notice.show', $item->id) }}"><i
+                                            class="fa-solid fa-eye text-light bg-primary p-2 rounded"></i></i></a>
+                                    </div>
 
                                 </div>
                             </td>

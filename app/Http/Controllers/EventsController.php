@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -13,6 +14,9 @@ class EventsController extends Controller
      */
     public function index()
     {
+        // $today = Carbon::today();
+        // $currentEvents = Event::whereDate('event_date', '<=', $today)->get();
+        // $upcomingEvents = Event::whereDate('event_date', '>', $today)->get();
         $event = Event::all();
         return view("Event.view_event", compact('event'));
     }
@@ -67,7 +71,9 @@ class EventsController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $event=Event::find($id);
+        
+        return view("Event.display_event",compact('event'));
     }
 
     /**

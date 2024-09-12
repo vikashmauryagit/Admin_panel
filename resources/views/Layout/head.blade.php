@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-  <link rel="shortcut icon" href="{{asset('assets/img/lion.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/img/lion.png') }}" type="image/x-icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -27,16 +27,13 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 
-    <script src='assets/js/jquery-3.3.1.slim.min.js'></script>
-    <script src='assets/js/bootstrap.bundle.min.js'></script>
     <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'> -->
     <!-- <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'> -->
 
 
-    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
 
     <!-- Template Main CSS File -->
@@ -100,4 +97,17 @@
 
         </div>
     </header>
-    <!-- End Header -->
+    
+
+    {{-- @yield('content') --}}
+    {{-- <script src='assets/js/bootstrap.bundle.min.js'></script> --}}
+    {{-- <script src='assets/js/jquery-3.3.1.slim.min.js'></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+    
+    
+
+</body>
+
+</html>

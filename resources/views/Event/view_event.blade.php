@@ -65,6 +65,9 @@
 
                                                     </form>
                                                 </div>
+                                                <div><a href="{{ route('Event.show', $item->id) }}"><i
+                                                    class="fa-solid fa-eye text-light bg-primary p-2 rounded"></i>
+                                        </div>
                                             </div>
                                         </td>
                                     </tr>
