@@ -20,24 +20,26 @@
                     </p>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="{{ route('notice.index') }}" class="nav-link" id="green">
-                    <i class="fa-solid fa-circle-exclamation "></i>
-                    <p>
-                        Notice
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('Event.index') }}" class="nav-link" id="orange">
-                    <i class="fa-solid fa-calendar-check"></i>
-                    <p>
-                        Events
-                        <i class="right fas fa-angle-left"></i>
-                    </p>
-                </a>
-            </li>
+            @if (Auth::check())
+                <li class="nav-item">
+                    <a href="{{ route('notice.index') }}" class="nav-link" id="green">
+                        <i class="fa-solid fa-circle-exclamation "></i>
+                        <p>
+                            Notice
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('Event.index') }}" class="nav-link" id="orange">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <p>
+                            Events
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                </li>
+            @endif
             {{-- <li class="nav-item">
                 <a href="#" class="nav-link tuch">
                     <i class="fa-solid fa-calendar-days"></i>

@@ -23,11 +23,14 @@ Route::get('/login', function () {
      return view('User.login'); })->name('login');
 // Route::redirect('/','/user');
 Route::resource('user', UserController::class);
-Route::get('logout',[UserController::class,'logout'])->name('logout')->middleware([EnsureUserIsLogin::class]);
+// Route::get('logout',[UserController::class,'logout'])->name('logout')->middleware([EnsureUserIsLogin::class]);
+Route::get('logout',[UserController::class,'logout'])->name('logout');
 // Notice Route
-Route::resource('notice',NoticeController::class)->middleware([EnsureUserIsLogin::class]);
+// Route::resource('notice',NoticeController::class)->middleware([EnsureUserIsLogin::class]);
+Route::resource('notice',NoticeController::class);
 // Events Routes
-Route::resource('Event',EventsController::class)->middleware([EnsureUserIsLogin::class]);
+// Route::resource('Event',EventsController::class)->middleware([EnsureUserIsLogin::class]);
+Route::resource('Event',EventsController::class);
 
 Route::get('/home',[HomeController::class,'index'])->name('home');
 Route::get('/about',[HomeController::class,'about'])->name('about');

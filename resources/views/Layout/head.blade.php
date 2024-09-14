@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
     <title>Lion Tarachand Bappa Hospital & Research Center</title>
     <meta content="" name="description">
@@ -33,7 +34,7 @@
     <!-- <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'> -->
 
 
-   
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
 
     <!-- Template Main CSS File -->
@@ -72,7 +73,7 @@
                     <div>
                         <img src="assets/img/Lions_Clubs_International_logo.svg.png" alt="">
                     </div>
-                    <h5 class="fw-bold">Lion Tarachand Bapa Hospital & Research Center</h5>
+                    <h6>Lion Tarachand Bapa Hospital & Research Center</h6>
                 </div>
             </a>
 
@@ -97,16 +98,18 @@
 
         </div>
     </header>
-    
+
 
     {{-- @yield('content') --}}
     {{-- <script src='assets/js/bootstrap.bundle.min.js'></script> --}}
-    {{-- <script src='assets/js/jquery-3.3.1.slim.min.js'></script> --}}
+    <script src='assets/js/jquery-3.3.1.slim.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+    <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
-    
-    
+
+
+
 
 </body>
 
