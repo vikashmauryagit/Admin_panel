@@ -237,6 +237,17 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="container-fluid bg-body-tertiary text-center py-3">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Lion Tarachand Bapa Hospital & Research Center</span></strong>. All
+                Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="https://deltasoftsys.in/" class="_target">DeltaSoft</a>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

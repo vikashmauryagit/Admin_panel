@@ -127,37 +127,16 @@
                                 <tr class="row">
                                     <th class="col">Date</th>
                                     <th class="col">Title</th>
-                                    <th class="col">Objectives</th>
-                                    <th class="col">Resource Person</th>
+                                    <th class="col">Images</th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="row">
                                     <td class="col">{{ $event->event_date }}</td>
                                     <td class="col">{{ $event->event_title }}</td>
-                                    <td class="col">{{ $event->objectives }}</td>
-                                    <td class="col">{{ $event->resource_person }}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="card-body">
-                        <table id="example1" class="table table-bordered table-striped">
-                            <thead>
-                                <tr class="row">
-                                    <th class="col">Beneficiaries</th>
-                                    <th class="col">Event Outcome</th>
-                                    <th class="col">Committee</th>
-                                    <th class="col">Images</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="row">
-                                    <td class="col">{{ $event->beneficiaries }}</td>
-                                    <td class="col">{{ $event->event_outcome }}</td>
-                                    <td class="col">{{ $event->committee }}</td>
-                                    <td class="col"><img src="{{ Storage::url($event->event_img) }}"
-                                            alt="User Image" width="60 rounded"></td>
+                                    <td class="col"><img src="{{ Storage::url($event->event_img) }}" alt="User Image"
+                                            width="60 rounded"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -250,6 +229,17 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-fluid bg-body-tertiary text-center py-3">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Lion Tarachand Bapa Hospital & Research Center</span></strong>. All
+                Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="https://deltasoftsys.in/" target="_vikash">DeltaSoft</a>
             </div>
         </div>
     </div>

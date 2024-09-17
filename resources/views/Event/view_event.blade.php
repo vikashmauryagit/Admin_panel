@@ -1,6 +1,6 @@
 @extends('Layout.main')
 @section('content')
-@session('success')
+    @session('success')
         <div class="alert alert-success" role="alert">
             <span class="text-light">{{ session('success') }}</span>
         </div>
@@ -27,11 +27,6 @@
                                 <tr>
                                     <th>Date</th>
                                     <th>Title</th>
-                                    <th>Objectives</th>
-                                    <th>Resource Person</th>
-                                    <th>Beneficiaries</th>
-                                    <th>Event Outcome</th>
-                                    <th>Committee</th>
                                     <th>Images</th>
                                     <th>Action</th>
 
@@ -42,33 +37,29 @@
                                     <tr>
                                         <td>{{ $item->event_date }}</td>
                                         <td>{{ $item->event_title }}</td>
-                                        <td>{{ $item->objectives }}</td>
-                                        <td>{{ $item->resource_person }}</td>
-                                        <td>{{ $item->beneficiaries }}</td>
-                                        <td>{{ $item->committee }}</td>
-                                        <td>{{ $item->event_outcome }}</td>
-                                        {{-- <td><img src="{{ Storage::url($item->file_path) }}" alt="User Image" width="100 rounded"></td> --}}
                                         <td><img src="{{ Storage::url($item->event_img) }}" alt="User Image"
-                                                width="60 rounded"></td>
+                                                width="60" class="rounded">
                                         <td>
-                                            <div class="d-flex">
-                                                <div><a href="{{ route('Event.edit', $item->id) }}"><i
-                                                            class="fa-solid fa-pen-to-square bg-primary p-2 rounded"></i>
-                                                </div>
-                                                <div>
-                                                    <form action="{{ route('Event.destroy',$item->id) }}" method="POST">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit" style="background: none; border: none;">
-                                                            <i class="fa-solid fa-trash bg-danger p-2 rounded"></i>
-                                                        </button>
-
-                                                    </form>
-                                                </div>
-                                                <div><a href="{{ route('Event.show', $item->id) }}"><i
-                                                    class="fa-solid fa-eye text-light bg-primary p-2 rounded"></i>
-                                        </div>
+                                           
+                                       
+                                        <div class="d-flex">
+                                            <div><a href="{{ route('Event.edit', $item->id) }}"><i
+                                                        class="fa-solid fa-pen-to-square bg-primary p-2 rounded"></i>
                                             </div>
+                                            <div>
+                                                <form action="{{ route('Event.destroy', $item->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" style="background: none; border: none;">
+                                                        <i class="fa-solid fa-trash bg-danger p-2 rounded"></i>
+                                                    </button>
+
+                                                </form>
+                                            </div>
+                                            <div><a href="{{ route('Event.show', $item->id) }}"><i
+                                                        class="fa-solid fa-eye text-light bg-primary p-2 rounded"></i>
+                                            </div>
+                                        </div>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -77,11 +68,6 @@
                                 <tr>
                                     <th>Date</th>
                                     <th>Title</th>
-                                    <th>Objectives</th>
-                                    <th>Resource Person</th>
-                                    <th>Beneficiaries</th>
-                                    <th>Event Outcome</th>
-                                    <th>Committee</th>
                                     <th>Images</th>
                                     <th>Action</th>
                                 </tr>

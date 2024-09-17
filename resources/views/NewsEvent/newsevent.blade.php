@@ -8,8 +8,8 @@
     <div class="container">
         <div class="row" data-aos="fade-up" data-aos-delay="100">
             <div class="col-md-6">
-                <img src="assets/img/about_1.jpg" class="img-fluid">
-                <img src="assets/img/about_2.jpg" class="img-fluid">
+                <img src="{{asset('assets/img/about_1.jpg')}}" class="img-fluid">
+                <img src="{{asset('assets/img/about_2.jpg')}}" class="img-fluid">
             </div>
             <div class="col-md-6">
                 <p>

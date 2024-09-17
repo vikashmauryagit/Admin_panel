@@ -55,7 +55,7 @@
 					<h2>Board Message</h2>
 				</div>
 				<div class="col-md-4">
-					<img src="assets/img/ashok-mehta.jpg" class="img-fluid">
+					<img src="{{asset('assets/img/ashok-mehta.jpg')}}" class="img-fluid">
 				</div>
 				<div class="col-md-8">
 					<p>

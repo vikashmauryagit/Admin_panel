@@ -125,7 +125,7 @@
 
 
 
-    <script>
+    {{-- <script>
         $(function () {
           $("#example1").DataTable({
             "responsive": true, "lengthChange": false, "autoWidth": false,
@@ -141,7 +141,7 @@
             "responsive": true,
           });
         });
-      </script>
+      </script> --}}
 </body>
 
 </html>

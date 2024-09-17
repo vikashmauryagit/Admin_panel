@@ -22,48 +22,6 @@
                         </span>
                     </div>
                     <div class="mb-2">
-                        <label>Objectives <span class="text-muted" style="font-size: 12px;">Enter for every new line</span></label>
-                        <textarea name="objectives" class="form-control"> </textarea>
-                        <span class="text-danger">
-                            @error('objectives'){{ $message }}@enderror
-                        </span>
-                    </div>
-                    <div class="mb-2">
-                        <label>Resource Person </label>
-                        <input type="text" name="resource_person" class="form-control" >
-                        <span class="text-danger">
-                            @error('resource_person'){{ $message }}@enderror
-                        </span>
-                    </div>
-                    <div class="mb-2">
-                        <label>Beneficiaries </label>
-                        <input type="text" name="beneficiaries" class="form-control">
-                        <span class="text-danger">
-                            @error('beneficiaries'){{ $message }}@enderror
-                        </span>
-                    </div>
-                    <div class="mb-2">
-                        <label>Event Outcome <span class="text-muted" style="font-size: 12px;">Enter for every new line</span></label>
-                        <textarea name="event_outcome" class="form-control"> </textarea>
-                        <span class="text-danger">
-                            @error('event_outcome'){{ $message }}@enderror
-                        </span>
-                    </div>
-                    <div class="mb-2">
-                        <label>Committee </label>
-                        <input type="text" name="committee" class="form-control" >
-                        <span class="text-danger">
-                            @error('committee'){{ $message }}@enderror
-                        </span>
-                    </div>
-                    <div class="mb-2">
-                        <label>Cordinator </label>
-                        <input type="text" name="cordinator" class="form-control" >
-                        <span class="text-danger">
-                            @error('cordinator'){{ $message }}@enderror
-                        </span>
-                    </div>
-                    <div class="mb-2">
                         <label>Upload Image </label>
                         <input type="file" name="event_img" id="event_images" class="form-control" multiple>
                         @error('event_img')

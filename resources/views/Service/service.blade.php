@@ -6,7 +6,7 @@
     <h1 class="page-heading">Our Services</h1>
   </div>
 
-  <section id="services" class="services services">
+  <section id="services" class="services">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2>Services</h2>
@@ -17,7 +17,7 @@
         <div id="Cathlab" class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon">
             <!-- <i class="fas fa-disease"></i> -->
-            <img src="assets/img/cathlab.png" style="width: 170%;" alt="">
+            <img src="{{asset('assets/img/cathlab.png')}}" style="width: 170%;" alt="">
           </div>
           <h4 class="title"><a href="">CATHLAB DEPARTMENT</a></h4>
           <p class="description">
@@ -40,7 +40,7 @@
         <div id="ctscan" class="col-lg-4 col-md-6 icon-box" id="ctscan" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon">
             <!-- <i class="fas fa-biohazard"></i> -->
-            <img src="assets/img/ctscan.jfif" style="width: 100%;" alt="">
+            <img src="{{asset('assets/img/ctscan.jfif')}}" style="width: 100%;" alt="">
           </div>
           <h4 class="title"><a href="">CT Scan</a></h4>
           <p class="description">
@@ -50,7 +50,7 @@
         <div id="dialysis" class="col-lg-4 col-md-6 icon-box" id="ctscan" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon">
             <!-- <i class="fas fa-biohazard"></i> -->
-            <img src="assets/img/dialysis.svg" style="width: 100%;" alt="">
+            <img src="{{asset('assets/img/dialysis.svg')}}" style="width: 100%;" alt="">
           </div>
           <h4 class="title"><a href="">Dialysis</a></h4>
           <p class="description">
@@ -60,7 +60,7 @@
         <div id="iccuunit" class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon">
             <!-- <i class="fas fa-disease"></i> -->
-            <img src="assets/img/iccu.jpg" style="width: 100%;" alt="">
+            <img src="{{asset('assets/img/iccu.jpg')}}" style="width: 100%;" alt="">
           </div>
           <h4 class="title"><a href="">ICCU Unit</a></h4>
           <p class="description">
@@ -71,7 +71,7 @@
         <div id="pulmonary" class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon">
             <!-- <i class="fas fa-procedures"></i> -->
-            <img src="assets/img/pulmanaryrehab.png" style="width: 100%;" alt="">
+            <img src="{{asset('assets/img/pulmanaryrehab.png')}}" style="width: 100%;" alt="">
           </div>
           <h4 class="title"><a href="">P.F.T & Pulmanary Rehab</a></h4>
           <p class="description">
@@ -82,7 +82,7 @@
         <div id="opdwards" class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon">
             <!-- <i class="fas fa-disease"></i> -->
-            <img src="assets/img/opd.png" style="width: 100%;" alt="">
+            <img src="{{asset('assets/img/opd.png')}}" style="width: 100%;" alt="">
           </div>
           <h4 class="title"><a href="">OPD Wards</a></h4>
           <p class="description">
@@ -93,7 +93,7 @@
         <div id="cardiacdepartment" class="col-lg-4 col-md-6 icon-box offset-lg-2" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon">
             <!-- <i class="fas fa-disease"></i> -->
-            <img src="assets/img/cardiology.jfif" style="width: 170%;" alt="">
+            <img src="{{asset('assets/img/cardiology.jfif')}}" style="width: 170%;" alt="">
           </div>
           <h4 class="title"><a href="">Cardiac Department</a></h4>
           <p class="description">
@@ -103,7 +103,7 @@
         <div id="oncology" class="col-lg-4 col-md-6 icon-box" id="oncology" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon">
             <!-- <i class="fas fa-disease"></i> -->
-            <img src="assets/img/oncologyicon.jpg" style="width: 100%;" alt="">
+            <img src="{{asset('assets/img/oncologyicon.jpg')}}" style="width: 100%;" alt="">
           </div>
           <h4 class="title"><a href="">Oncology Department</a></h4>
           <p class="description">
@@ -122,7 +122,7 @@
 
         <div class="row">
           <div class="col-md-6" style="max-width: 100%; max-height:100%;">
-            <img src="assets/img/cathlab.jpg" style="width:100%; height:100%; border-radius: 10px;" alt="">
+            <img src="{{asset('assets/img/cathlab.jpg')}}" style="width:100%; height:100%; border-radius: 10px;" alt="">
           </div>
           <div class="col-md-6">
             <ul class="row servicesubtitude">
@@ -160,7 +160,7 @@
 
         <div class="row">
           <div class="col-md-6" style="max-width:100%; max-height: 100%;">
-            <img src="assets/img/cvts.webp" style="width: 100%; height:100%; border-radius: 10px;" alt="">
+            <img src="{{asset('assets/img/cvts.webp')}}" style="width: 100%; height:100%; border-radius: 10px;" alt="">
           </div>
           <div class="col-md-6">
             <ul class="servicecvts">
@@ -182,7 +182,7 @@
 
         <div class="row">
           <div class="col-md-6" style="max-width:100%; max-height:250px;">
-            <img src="assets/img/interradiology.jpg" style="width:100%; height:auto; border-radius: 10px;" alt="">
+            <img src="{{asset('assets/img/interradiology.jpg')}}" style="width:100%; height:auto; border-radius: 10px;" alt="">
           </div>
           <div class="col-md-6">
             <ul class="serviceradiology">
@@ -205,25 +205,25 @@
           <div class="row">
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/licensed-beds2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/licensed-beds2.png')}}"></div>
                 <div class="col-md-9 pt-2">Soon To Be 100 Beds Super Speciality Hospital</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/operating-room.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/operating-room.png')}}"></div>
                 <div class="col-md-9 pt-2">3 Operation Theatres</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/doctors2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/doctors2.png')}}"></div>
                 <div class="col-md-9 pt-2">250 Doctors</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/emergencyhospital.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/emergencyhospital.png')}}"></div>
                 <div class="col-md-9">24/7 Accidents & Emergency</div>
               </div>
             </div>
@@ -232,25 +232,25 @@
 
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/blood-bank2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/blood-bank2.png')}}"></div>
                 <div class="col-md-9 p-2">24/7 Blood Bank</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/ctscan.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/ctscan.png')}}"></div>
                 <div class="col-md-9 p-2">CT Scan - 128 Slices</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/pharmacy2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/pharmacy2.png')}}"></div>
                 <div class="col-md-9 p-2">24/7 Pharmacy</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/cath.png" class="facicon"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/cath.png" class="facicon')}}"></div>
                 <div class="col-md-9 p-2">24/7 CathLab</div>
               </div>
             </div>
@@ -259,26 +259,26 @@
 
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/chest-pain.png" class="facicon"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/chest-pain.png')}}" class="facicon"></div>
                 <div class="col-md-9 p-2">24/7 Chest pain Clinic</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/stroke2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/stroke2.png')}}"></div>
                 <div class="col-md-9 p-2">24/7 Stroke Unit</div>
               </div>
             </div>
 
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/intensive-care-unit.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/intensive-care-unit.png')}}"></div>
                 <div class="col-md-9 p-2">ICCU / MICU / NICU</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/cvts2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/cvts2.png')}}"></div>
                 <div class="col-md-9 p-2">CVTS / OT</div>
               </div>
             </div>
@@ -288,25 +288,25 @@
 
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/dialysis2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/dialysis2.png')}}"></div>
                 <div class="col-md-9 p-2">Dialysis Centre</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/urology2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/urology2.png')}}"></div>
                 <div class="col-md-9 p-2">Urology Surgery Centre</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/surgery2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/surgery2.png')}}"></div>
                 <div class="col-md-9 p-2">Specialized Cancer Surgery Centre</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/organ2.png"></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/organ2.png')}}"></div>
                 <div class="col-md-9 p-2">Endoscopy,Colonoscopy,Gastroscopy,Laparoscopy Surgery Centre</div>
               </div>
             </div>
@@ -316,26 +316,26 @@
 
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/maternity2.png "></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/maternity2.png')}} "></div>
                 <div class="col-md-9 p-2">Maternity Department</div>
               </div>
             </div>
 
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/Sonography2.png "></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/Sonography2.png')}} "></div>
                 <div class="col-md-9 p-2">Sonography - Colour Doppier Scan, 2D Echo, ECG, EEG, EMG</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/x-ray2.png "></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/x-ray2.png')}} "></div>
                 <div class="col-md-9 p-2">Digital X-Ray / PFT</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/research2.png "></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/research2.png')}} "></div>
                 <div class="col-md-9 p-2">Fully Automated Pathology Lab</div>
               </div>
             </div>
@@ -345,19 +345,19 @@
 
             <div class="col-md-3 col-6 offset-lg-2">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/eyecare.png "></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/eyecare.png')}} "></div>
                 <div class="col-md-9 p-2">Complete Eye Care Set-up & Opthalmic OT</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/chemotherapy2.png "></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/chemotherapy2.png')}} "></div>
                 <div class="col-md-9 p-2">Chemotherapy Centre</div>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="row mb-2">
-                <div class="col-md-3"><img src="assets/img/facilities/hospital-bed.png "></div>
+                <div class="col-md-3"><img src="{{asset('assets/img/facilities/hospital-bed.png')}}"></div>
                 <div class="col-md-9 p-2">Cashless Hospitalisation Facility</div>
               </div>
             </div>

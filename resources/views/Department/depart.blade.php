@@ -96,7 +96,7 @@
                                         who specialize in diagnosing and treating conditions related to the heart and
                                         blood vessels.
                                     </p>
-                                    <img src="assets/img/department/cardiologydept.jpeg" alt=""
+                                    <img src="{{asset('assets/img/department/cardiologydept.jpeg')}}" alt=""
                                         class="img-fluid">
                                     <ul>
                                         <li>
@@ -187,7 +187,7 @@
                                         provide comprehensive care to cancer patients. Here are some key points about
                                         oncology:
                                     </p>
-                                    <img src="assets/img/department/oncologydept.jpeg" alt=""
+                                    <img src="{{asset('assets/img/department/oncologydept.jpeg')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -272,7 +272,7 @@
                                         monitoring, treatment, and support to critically ill patients. Here are some key
                                         points about critical care:
                                     </p>
-                                    <img src="assets/img/department/criticalcaredept.webp" alt=""
+                                    <img src="{{asset('assets/img/department/criticalcaredept.webp')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -357,7 +357,7 @@
                                         focuses on the prevention, diagnosis, and nonsurgical treatment of adult
                                         diseases. Here are some key points about general medicine:
                                     </p>
-                                    <img src="assets/img/department/generalmedicinedept.jpg" alt=""
+                                    <img src="{{asset('assets/img/department/generalmedicinedept.jpg')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -440,7 +440,7 @@
                                         with chronic lung diseases improve their quality of life and manage their
                                         symptoms more effectively.
                                     </p>
-                                    <img src="assets/img/department/pulmanaryrehabdept.png" alt=""
+                                    <img src="{{asset('assets/img/department/pulmanaryrehabdept.png')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -525,7 +525,7 @@
                                         of a wide range of medical conditions affecting various organs and body systems.
                                         Here are some key aspects of general surgery:
                                     </p>
-                                    <img src="assets/img/department/general_surgerydept.jpg" alt=""
+                                    <img src="{{asset('assets/img/department/general_surgerydept.jpg')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -604,7 +604,7 @@
                                         biliary tract. Gastroenterologists are physicians who specialize in this field
                                         and are trained to manage a wide range of gastrointestinal (GI) conditions.
                                     </p>
-                                    <img src="assets/img/department/Gastroenterologydept.jpg" alt=""
+                                    <img src="{{asset('assets/img/department/Gastroenterologydept.jpg')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -687,7 +687,7 @@
                                         treat them surgically if required & restoring patients with hearing impairment
                                         with provisional of hearing aids.
                                     </p>
-                                    <img src="assets/img/ent.jpg" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/ent.jpg')}}" alt="" class="img-fluid">
                                     <h4>Objective</h4>
                                     <div>Knowledge</div>
                                     <li>Understand the basic pathophysiology & management of common ENT diseases and
@@ -739,17 +739,7 @@
                                         <li>AUDIOLOGIST ROOM</li>
                                         <li>4 OPD ROOM</li>
                                     </ul>
-                                    <!-- <ul style="list-style: none; line-height: 3;">
-                                        <li>FACILITY, DEPARTMENT OF ENT</li>
-                                        <li>STUDENT LECTURE ROOM</li>
-                                        <li>SCOPY ROOM</li>
-                                        <li>MINOR PROCEDURE ROOM</li>
-                                        <li>COMPUTER ROOM</li>
-                                        <li>BERA ROOM</li>
-                                        <li>AUDIOLOGIST ROOM</li>
-                                        <li>4 OPD ROOM</li>
-
-                                    </ul> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -763,7 +753,7 @@
                                         disorders affecting the nervous system, including the brain, spinal cord,
                                         nerves, and muscles.
                                     </p>
-                                    <img src="assets/img/department/neurologydept.webp" alt=""
+                                    <img src="{{asset('assets/img/department/neurologydept.webp')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -850,7 +840,7 @@
                                         Pediatric surgeons are specially trained to care for young patients, addressing
                                         a wide range of surgical needs unique to pediatric populations.
                                     </p>
-                                    <img src="assets/img/department/pediatricsurgerydept.jpg" alt=""
+                                    <img src="{{asset('assets/img/department/pediatricsurgerydept.jpg')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -948,7 +938,7 @@
                                         vagina. Gynecologists are physicians who specialize in this field and are
                                         trained to diagnose, treat, and manage a wide range of gynecological conditions.
                                     </p>
-                                    <img src="assets/img/department/Gynecologydept.jpg" alt=""
+                                    <img src="{{asset('assets/img/department/Gynecologydept.jpg')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -1041,7 +1031,7 @@
                                         specialize in this field and are trained to address a wide range of urological
                                         conditions.
                                     </p>
-                                    <img src="assets/img/department/urologydept.png" alt=""
+                                    <img src="{{asset('assets/img/department/urologydept.png')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -1151,7 +1141,7 @@
                                         Nephrologists are physicians who specialize in this field and are trained to
                                         address a wide range of kidney-related issues.
                                     </p>
-                                    <img src="assets/img/department/nephrologydept.jfif" alt=""
+                                    <img src="{{asset('assets/img/department/nephrologydept.jfif')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -1266,7 +1256,7 @@
                                         specialize in this field and are trained to address a wide range of orthopedic
                                         issues.
                                     </p>
-                                    <img src="assets/img/department/Orthopedicdept.webp" alt=""
+                                    <img src="{{asset('assets/img/department/Orthopedicdept.webp')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -1393,7 +1383,7 @@
                                         physicians who specialize in this field and are trained to address a wide range
                                         of eye problems.
                                     </p>
-                                    <img src="assets/img/department/ophthalmologydept.jpg" alt=""
+                                    <img src="{{asset('assets/img/department/ophthalmologydept.jpg')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -1552,7 +1542,7 @@
                                         Dermatologists are physicians who specialize in this field and are trained to
                                         address a wide range of dermatological conditions.
                                     </p>
-                                    <img src="assets/img/department/dermatologydept.jpg" alt=""
+                                    <img src="{{asset('assets/img/department/dermatologydept.jpg')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -1703,7 +1693,7 @@
                                         who specialize in this field and are trained to address a wide range of cosmetic
                                         and reconstructive surgical procedures.
                                     </p>
-                                    <img src="assets/img/department/plasticsurgerydept.jpg" alt=""
+                                    <img src="{{asset('assets/img/department/plasticsurgerydept.jpg')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -1793,7 +1783,7 @@
                                         specialize in this field and provide a range of oral health services to
                                         patients.
                                     </p>
-                                    <img src="assets/img/department/Dentistrydept.jfif" alt=""
+                                    <img src="{{asset('assets/img/department/Dentistrydept.jfif')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -1918,7 +1908,7 @@
                                         are premature, critically ill, or have medical conditions requiring specialized
                                         treatment.
                                     </p>
-                                    <img src="assets/img/department/nicudept.jfif" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/department/nicudept.jfif" alt="" class="img')}}-fluid">
                                     <ol>
                                         <li>
                                             <b>Scope of Care:</b> NICUs are equipped to provide comprehensive medical
@@ -2039,7 +2029,7 @@
                                         who specialize in providing personalized treatment plans tailored to each
                                         individual's needs.
                                     </p>
-                                    <img src="assets/img/department/Physiotherapydept.jfif" alt=""
+                                    <img src="{{asset('assets/img/department/Physiotherapydept.jfif')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>
@@ -2189,7 +2179,7 @@
                                         and evaluating a wide range of medical conditions, including injuries, diseases,
                                         and abnormalities.
                                     </p>
-                                    <img src="assets/img/department/ctscandept.webp" alt=""
+                                    <img src="{{asset('assets/img/department/ctscandept.webp')}}" alt=""
                                         class="img-fluid">
                                     <ol>
                                         <li>

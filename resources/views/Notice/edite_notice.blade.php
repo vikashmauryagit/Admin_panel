@@ -30,7 +30,7 @@
                             @enderror
                         </div>
                         <div class="mb-3 col-12">
-                            <img src="{{ Storage::url($notice->file_path) }}" alt="nahi batana">
+                            <img src="{{ Storage::url($notice->file_path) }}" alt="nahi batana" style="height: 80px;width:80px;">
                         </div>
                         <div class="mb-3 col-12">
                             <label for="exampleInputPassword1" class="form-label">Upload File</label>

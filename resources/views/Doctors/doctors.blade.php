@@ -6,64 +6,7 @@
     <h1 class="page-heading">Doctors</h1>
   </div>
 
-  <!-- ======= Doctors Section ======= -->
-  <!-- <section id="doctors" class="doctors section-bg">
-  <div class="container" data-aos="fade-up">
-
-   <div class="row">
-
-    <div class="col-lg-3 col-md-6 align-items-stretch">
-     <div class="member" data-aos="fade-up" data-aos-delay="100">
-      <div class="member-img">
-       <img src="assets/img/user.png" class="img-fluid p-2" alt="">
-      </div>
-      <div class="member-info">
-       <h4>DR.ANURAG SHUBHRAMANYAM</h4>
-       <span>ONCOLOGY</span>
-      </div>
-     </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 align-items-stretch">
-     <div class="member" data-aos="fade-up" data-aos-delay="200">
-      <div class="member-img">
-       <img src="assets/img/user.png" class="img-fluid p-2" alt="">
-      </div>
-      <div class="member-info">
-       <h4>DR.MANALI PATIL</h4>
-       <span>RADIOLOGY</span>
-      </div>
-     </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 align-items-stretch">
-     <div class="member" data-aos="fade-up" data-aos-delay="300">
-      <div class="member-img">
-       <img src="assets/img/user.png" class="img-fluid p-2" alt="">
-      </div>
-      <div class="member-info">
-       <h4>DR.PRASANNA BISWAS</h4>
-       <span>ORTHOPEDIC</span>
-      </div>
-     </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 align-items-stretch">
-     <div class="member" data-aos="fade-up" data-aos-delay="400">
-      <div class="member-img">
-       <img src="assets/img/user.png" class="img-fluid p-2" alt="">
-      </div>
-      <div class="member-info">
-       <h4>DR.ARVIND SINGH</h4>
-       <span>CARDIOLOGY</span>
-      </div>
-     </div>
-    </div>
-
-   </div>
-
-  </div>
- </section> -->
+  
 
 
   <div class="header">
